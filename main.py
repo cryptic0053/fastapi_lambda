@@ -11,8 +11,4 @@ def root():
 def health():
     return {"status": "ok"}
 
-@app.get("/status")
-def status():
-    return {"uptime": "running", "version": "1.0"}
-
 handler = Mangum(app)
